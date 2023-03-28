@@ -5,8 +5,6 @@ on:
     branches:
       - main
 
-  workflow_dispatch:
-
 jobs:
   update-typedocs:
     runs-on: ubuntu-latest
