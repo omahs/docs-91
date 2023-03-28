@@ -5,6 +5,11 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+    source_repo:
+      description: "Source repo"
+      required: true
+      type: string
 
 jobs:
   update-typedocs:
