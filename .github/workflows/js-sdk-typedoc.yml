@@ -1,0 +1,19 @@
+name: Update Typedoc Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-typedocs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout docs repo
+        uses: actions/checkout@v2
+
+      - name: Checkout near-sdk-js repo
+        uses: actions/checkout@v2
+        with:
+          repository: near/near-sdk-js
