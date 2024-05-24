@@ -136,7 +136,7 @@ For purchasing NFTs, you must call the `offer` function. It takes an `nft_contra
 
 <Github language="rust" start="67" end="144" url="https://github.com/near-examples/ft-tutorial/blob/main/market-contract/src/sale.rs" />
 
-Once the transfer is complete, the contract will call `resolve_purchase` where it will check the status of the transfer.If the transfer succeeded, it will send the FTs to the seller. If the transfer didn't succeed, it will increment the buyer's FT balance (acting as a refund).
+Once the transfer is complete, the contract will call `resolve_purchase` where it will check the status of the transfer. If the transfer succeeded, it will send the FTs to the seller. If the transfer didn't succeed, it will increment the buyer's FT balance (acting as a refund).
 
 
 <Github language="rust" start="146" end="192" url="https://github.com/near-examples/ft-tutorial/blob/main/market-contract/src/sale.rs" />
